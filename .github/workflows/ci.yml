@@ -11,6 +11,6 @@ jobs:
     - name: FTP-Deploy-Action
       uses: SamKirkland/FTP-Deploy-Action@3.1.1
       with:
-        ftp-server: ftp.raozanexpressshop.com
+        ftp-server: ftp.raozanexpressshop.com:21/public_html
         ftp-username: public_html@raozanexpressshop.com
         ftp-password: ${{ secrets.FTP_PASS }}
